@@ -1,0 +1,53 @@
+.nav {
+  position: fixed;
+  background-color: whitesmoke;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px 50px;
+  border-top: 1px solid #e0dddd;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav__list .nav__list-item i {
+  font-size: 24px;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  background-color: tomato;
+  right: -8px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
